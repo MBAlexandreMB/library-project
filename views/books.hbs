@@ -1,0 +1,23 @@
+  <a href="/book/add">Add new book</a> |
+  {{#if user}}
+    <a href="/auth/logout">Logout</a>
+  {{else}}
+    <a href="/auth/login">Login</a> |
+    <a href="/auth/signup">Sign up</a>
+  {{/if}}
+
+
+<h1>Check out our books!</h1>
+<ul>
+  {{#each books}}
+  <li>
+    <a href="/book/{{id}}">{{title}}</a>
+    {{#if isOwner}}
+      <a href="/book/edit/{{id}}" class="edit-button">edit</a>
+    {{/if}}
+  </li>
+  {{/each}}
+</ul>
+
+  <p class="account-message">
+  </p>

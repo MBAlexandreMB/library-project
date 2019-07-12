@@ -1,0 +1,20 @@
+<form action="/book/add" method="post">
+  <input type="hidden" name="owner" value="{{user._id}}">
+  <label for="">Title:</label>
+  <input type="text" name="title">
+
+  <label for="">Author:</label>
+  <select name="author">
+    {{#each authors}}
+        <option name="author" value="{{_id}}">{{name}} {{lastName}}</option>
+    {{/each}}
+  </select>
+
+  <label for="">Description:</label>
+  <input type="text" name="description">
+
+  <label for="">Rate:</label>
+  <input type="number" name="rating">
+
+  <button type="submit">ADD</button>
+</form>

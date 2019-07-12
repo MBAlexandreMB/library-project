@@ -1,0 +1,23 @@
+.edit-button {
+  margin-left:20px; 
+  color: #fff;
+  text-decoration: none;
+  padding: 2px 4px;
+  background-color: grey;
+  border-radius: 6px;
+}
+
+.review-item {
+  border-bottom: 1px solid grey;
+  margin: 10px 0;
+  padding-bottom: 10px;
+}
+
+.review-item p {
+  margin-bottom: 0;
+}
+
+.review-item span {
+  font-size: 10px;
+  color: grey;
+}
