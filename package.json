@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/MBAlexandreMB/library-project#readme",
   "dependencies": {
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.0",
     "connect-ensure-login": "^0.1.1",
     "connect-flash": "^0.1.1",
     "connect-mongo": "^3.0.0",
